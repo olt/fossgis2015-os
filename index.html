@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+      body { font-family: 'Helvetica', 'Arial'; }
+      h1, h2, h3 {
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# Der schwere Werdegang zu einem FOSSGIS-Open Source Projekt
+
+---
+
+# Agenda
+
+1. Was ist Erfolg
+2. Wege zum Erfolg
+3. Fazit
+
+---
+
+# Was ist ein Erfolgreiches OpenSource Projekt?
+
+---
+
+# Erfolg?
+
+- Praktisch
+- Wirtschftlich
+- Philantrophisch
+
+
+???
+
+olt: Ein Versuch Erfolg/Vorteil/Motivation von OS zu kategorisieren.
+
+---
+
+# Philantrophisch
+
+- Ich tu' anderen Gutes
+- Geben und Nehmen
+  - OpenSource Nutzen und eigene Software zurückgeben oder verbessern
+- Ich helfe damit gemeinnützigen Projekten (z.B. HOT)
+
+
+---
+
+# Witschafltich
+
+- Support
+- Weiterentwicklung
+- Marketing
+  - OS als Buzzword
+  - "Ach ja, Firma X ist doch die vom Projekt A"
+
+---
+
+# Praktisch
+
+- "scratch you own itch"
+  - Software aus eigenen Bedürfnisen entwickeln, aber kein interesse die zu verkaufen
+- "A thousand eyes make all bugs shallow." -- Linus Torvalds
+  - Wenn andere die Software nutzen kommen mehr Fehlermeldungen
+  - Im Optimalfall sogar Fixes
+
+
+
+---
+
+# Beispiele
+
+???
+
+olt: Evtl. macht es Sinn, ein paar Beispielprojekt vorzustellen und dann Probleme/Chancen/Möglichkeiten aufzuführen und hier wieder auf die Projekte zu verweisen.
+
+---
+
+# Beispiele 1
+
+Tool mit sehr abgeschlossenem Funktionsumfang (z.B. Imposm)
+
+Zielgruppe
+- Power-User
+
+Initiale Motivation:
+
+- Geben und nehmen
+- scratch own itch
+- "thousand eyes"
+- etwas Marketing
+
+---
+
+# Beispiele 2
+
+Bibliothek mit sehr offenen Funktionsumfang (z.B. SHOGun)
+
+Zielgruppe:
+- Entwickler?
+
+Initiale Motivation:
+
+- scratch own itch
+- Zukünftige Projekte vereinfachen
+- OS als Anforderung vom Kunden?
+...
+
+
+---
+# Beispiele 3
+
+Tool mit offenem Funktionsumfang (z.B. MapProxy)
+
+- Nutzer die auch WMS Dienste aufsetzen würden
+
+
+
+---
+
+
+
+# Probleme
+
+- Entwicklung
+- Öffentlicher Support (ML)
+- Marketing (Website)
+- Dokumentation
+- Release-Management
+- QS
+
+
+???
+
+till: Gemeinsam Vorstellung, warum es "schwer" ist, mit gutem Code auch ein gutes OS Prijekt zu machen, speziell aus Sicht kleinerer Firmen (Projekte, Hektik, etc.pp.)
+
+
+
+---
+
+
+# Entwicklung
+
+- Initiale Entwicklung
+- Weiterentwicklung
+- Große Features
+- "Version 2.0"
+
+
+???
+
+Weiterentwicklung am einfachsten von allen Punkten, insb. wenn Feature vom Aufwand überschaubar ist und einen konkreten Nutzen für den Kunden/Sponsor hat.
+
+
+Beispiel MapProxy:
+
+Intitiale Entwicklung/Weiterentwicklung: Absicherung in vier Projekte: 1. Absicherung von Diensten, 2. Absicherung von Layern, 3. Absicherung für geografische Bereiche (clipping) 4. Clipping von Kacheln
+Großes Feature: MapProxy WFS, oft angefragt, bisher keine Mittel dies umzusetzen.
+
+
+---
+
+# Support
+
+- Mailinglisten
+- Kommerzieller Support
+ - Schulung und Workshops
+ - Unterstützung nach Aufwand
+ - Supportvertrag
+
+???
+Aufwand nicht zu unterschätzen. Power-User können hier am einfachsten etwas zurückgeben.
+
+kommerziell: Gute Querfinanzierungsmöglichkeit für die Entwicklung
+allerdings, mit nur 1-2 stunden hilfe kommt man nicht weit. langfristige supportverträge notwendig
+
+---
+
+# Marketing
+
+- Website
+- Twitter
+- Flyer
+- OSGeo Live
+
+???
+
+Zahlt keiner, ist aber notwendig um neue Nutzer und langfristig weitere Entwicklung und Sponsoren zu finden.
+
+
+---
+
+# Dokumentation
+
+- Installation
+- Konfiguration
+- Tutorials
+- FAQ
+
+???
+
+Dokumentation darf nicht zu speziell sein und muss aktuell gehalten werden.
+Zahlt keiner diese zu verbessern. Bei jeder Entwicklung muss die aktualisierung/erweiterung der Doku mit eingeplant werden.
+
+---
+
+# Release-Management
+
+- Alpha/Beta/RC
+- Pakete aktualisieren und hochladen
+- Release notes
+- Announcement: Mailinglist, Blog, Twitter
+
+
+---
+
+# QS
+
+- Automatisierte Tests
+- Feedback/Fehlermeldungen analysieren
+  - Konfigurations-, Dokumentations oder Benutzerfehler?
+  - Oder Fehler im Programm?
+
+---
+
+
+##  Entwicklung
+
+## Support, Marketing, Dokumentation, Release-Management, QS
+
+
+Software-Entwicklung selbt ist nur ein Teil eines erfolgreichen Open-Source-Projektes.
+
+
+???
+
+Ein kleines Feature kann schnell mal in 2-3 Stunden umgesetzt werden...
+  - dann Dokumentation aktualisieren
+  - dann tests schreiben
+  - dann evtl. feststellen, dass die Änderung aufwirkungen auf eine andere Funktion hat und der code noch entsprechend erweitert werden muss
+... und dann ist der Tag um.
+
++ Fragen auf der ML zu dem Feature
++ Bugs durch leicht andere Nutzung des Features als geplant
++ nächste Feature Y kolidiert mit der implementierung für Feature X.
+
+
+---
+
+# Wie kann ich helfen?
+
+
+Als Nutzer:
+
+- Feedback geben und Fehler bericht(ig)en
+- Andern helfen (z.B. auf Mailinglisten antworten)
+- Werbung machen!
+ - mehr Nutzer, mehr aktive Nutzer, mehr Entwickler, mehr Sponsoren, ...
+
+Als Auftraggeber/Sponsor:
+
+ - Langfristige Projekteziele unterstützen
+ - Qualität fordern und finanzieren
+
+???
+
+---
+
+# Fazit
+
+
+    </textarea>
+    <script src="./remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>

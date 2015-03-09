@@ -22,22 +22,35 @@ class: center, middle
 
 # Agenda
 
-1. Wer sind wir? 
+1. Wer sind wir?
 2. Was ist Erfolg
 3. Wege zum Erfolg
 4. Fazit
 
 ---
 
-# Was ist ein erfolgreiches OpenSource Projekt?
+# Was ist Erfolg?
+
+- Für die Autoren
+- Für die Nutzer
+
+???
+
+olt: Wir müssen den Erfolg von zwei Seiten betrachten,: Autor und Nutzer
+Nutzer hat Interesse an Community, guter Dokumentation, Weiterentwicklung, etc.
 
 ---
 
-# Erfolg?
+# Erfolg für die Autoren von Open Source
 
-- Praktisch
+- Eigene Ziele werden erreicht!
+
+
+## Motivation ein OS Projekt zu starten
+
+- Philanthropisch
 - Wirtschaftlich
-- Philantrophisch
+- Praktisch
 
 
 ???
@@ -46,45 +59,49 @@ olt: Ein Versuch Erfolg/Vorteil/Motivation von OS zu kategorisieren.
 
 ---
 
-# Philantrophisch
+# Philanthropisch
 
-- Ich tu' anderen Gutes
 - Geben und Nehmen
-  - OpenSource Nutzen und eigene Software zurückgeben oder verbessern
-- Ich helfe damit gemeinnützigen Projekten (z.B. HOT)
-- Unterstützung der Open Source Philosophie
-
+  - Unterstützung der Open Source Philosophie
+  - Nutzen und eigene Software zurückgeben oder verbessern
+- "Ich tu anderen Gutes"
+  - Unterstütze Nutzer mit dem gleichen Problem
+  - Gemeinnützige Projekte (z.B. HOT)
 
 ---
 
-# Witschafltich
+# Wirtschaftlich
 
-- Support & Wartung
+- Support &amp; Wartung
 - Weiterentwicklung
 - Marketing
-  - OS als Buzzword
+  - Open Source als Buzzword
   - "Ach ja, Firma X ist doch die vom Projekt A"
 
 ---
 
 # Praktisch
 
-- "scratch you own itch"
-  - Software aus eigenen Bedürfnisen entwickeln, aber kein Interesse die zu verkaufen
-- "A thousand eyes make all bugs shallow." -- Linus Torvalds
-  - Wenn andere die Software nutzen kommen mehr Fehlermeldungen
-  - Im Optimalfall sogar Fixes
-
+- ""Scratch your own itch""
+  - Software aus eigenen Bedürfnissen entwickeln
+- "A thousand eyes make all bugs shallow." – Linus Torvalds
+  - Mehr Nutzer, mehr Fehlermeldungen
+  - Im Optimalfall mehr Fixes
 
 ---
 
+# Erfolg für die Nutzer von Open Source
 
-# Was ist ein Gutes Open Source Projekt
+- Anwendung löst meine Probleme!
+- Zu angemessenen "Kosten" (Zeit/Geld)
+  - Schulungsaufwand: Dokumentation, Workshops, Trial&amp;Error
+  - Entwicklung von fehlenden Funktionen
+  - Laufende Kosten (Lizenzkosten, Wartung, etc.)
+- Nachhaltig
+  - Aktive Weiterentwicklung
+  - "breite" Nutzerbasis
 
-- aktive Community
-- aktive Weiterentwicklung
-- gute Dokumentation
-- "breite" Nutzerbasis
+.center[Open Source ist Vertrauen.]
 
 ??? es geht etwas darum, was ich oft erzähle: Wann kann man auf ein open SOurce Projekt als Kernkomponente Vettrauen?
     wie vermeide ich mich alleine auf einen (Glasbaustein-Brille tragenden) Entwickler zu verlassen?
@@ -99,25 +116,26 @@ olt: Evtl. macht es Sinn, ein paar Beispielprojekt vorzustellen und dann Problem
 
 ---
 
-# Beispiele 1
+# Beispiele Imposm
 
-Tool mit sehr abgeschlossenem Funktionsumfang (z.B. Imposm)
+Tool mit sehr abgeschlossenem Funktionsumfang.
+Importiert OSM Daten nach PostGIS.
 
-Zielgruppe
+Zielgruppe:
 - Power-User
 
 Initiale Motivation:
 
-- Geben und nehmen
-- scratch own itch
-- "thousand eyes"
-- etwas Marketing
+- "Scratch your own itch"
+- "A thousand eyes make all bugs shallow."
+- Geben und Nehmen
+- Marketing
 
 ---
 
-# Beispiele 2
+# Beispiele SHOGun
 
-Bibliothek mit sehr offenen Funktionsumfang (z.B. SHOGun)
+Bibliothek mit sehr offenen Funktionsumfang.
 
 Zielgruppe:
 - Entwickler
@@ -125,25 +143,30 @@ Zielgruppe:
 
 Initiale Motivation:
 
-- scratch own itch
+- Scratch your own itch
 - Softwarekern  entwickeln, der es erlaubt zukünftige Projekte zu vereinfachen
 - Entwicklung einer steuernden Middleware für Anwendungen
 
 
 ---
-# Beispiele 3
+# Beispiele MapProxy
 
-Tool mit offenem Funktionsumfang (z.B. MapProxy)
+Tool mit offenem Funktionsumfang.
 
+Zielgruppe:
 - Nutzer die auch WMS Dienste aufsetzen würden
 
+Initiale Motivation:
+- Geben und Nehmen
+- Weiterentwicklung
+- Support &amp; Wartung
 
 
 ---
 
+# Wege zum Erfolg
 
-
-# Probleme
+## Was gehört zu einem erfolgreichen OS Projekt
 
 - Entwicklung
 - Öffentlicher Support (ML)
@@ -151,13 +174,12 @@ Tool mit offenem Funktionsumfang (z.B. MapProxy)
 - Dokumentation
 - Release-Management
 - QS
+- Community
 
 
 ???
 
 till: Gemeinsam Vorstellung, warum es "schwer" ist, mit gutem Code auch ein gutes OS Prijekt zu machen, speziell aus Sicht kleinerer Firmen (Projekte, Hektik, etc.pp.)
-
-
 
 ---
 
@@ -199,8 +221,7 @@ Planung SHOGun II seit Oktober 2013. Seitdem wurde in mehreren Projekten aus Zei
 - Mailinglisten
 - Kommerzieller Support
  - Schulung und Workshops
- - Unterstützung nach Aufwand
- - Supportvertrag
+ - Support-/Wartungsverträge
 - Wartung/Betriebssicherheit
 
 ???
@@ -254,29 +275,23 @@ Problem: Oft Mehrsprachigkeit gewünscht
 
 ???
 
-Regelmässige Releases zeigen Projektaktivität
+Regelmäßige Releases zeigen Projektaktivität
 
 ---
 
-# QS
+# Qualitätssicherung
 
-- Automatisierte Tests (zahlt auch keiner)
+- Automatisierte Tests
 - Feedback/Fehlermeldungen analysieren
   - Konfigurations-, Dokumentations oder Benutzerfehler?
   - Oder Fehler im Programm?
 
----
-
-
-##  Entwicklung
-
-## Support, Marketing, Dokumentation, Release-Management, QS
-
-
-Software-Entwicklung selbt ist nur ein Teil eines erfolgreichen Open-Source-Projektes.
-
 
 ???
+
+zahlt auch keiner
+
+problem: "Code über den Zaun werfen"
 
 Ein kleines Feature kann schnell mal in 2-3 Stunden umgesetzt werden...
   - dann Dokumentation aktualisieren
@@ -286,8 +301,33 @@ Ein kleines Feature kann schnell mal in 2-3 Stunden umgesetzt werden...
 
 + Fragen auf der ML zu dem Feature
 + Bugs durch leicht andere Nutzung des Features als geplant
-+ nächste Feature Y kolidiert mit der implementierung für Feature X.
++ nächste Feature Y kollidiert mit der Implementierung für Feature X.
 
+
+---
+
+# Community
+
+- Erfahrungsaustausch
+- Gemeinsame
+  - Weiterentwicklung
+  - Dokumentation
+- kein "Single Point of Failure"
+
+---
+
+
+
+# Fazit
+
+- Softwareentwicklung ist nur ein kleiner Teil.
+  - Nur die Weiterentwicklung finanziert kein OS Projekt.
+- Projekte müssen wachsen um Aufgaben auf viele Schultern zu verteilen:
+  - Autoren müssen langfristig Zeit/Geld in das OS Projekt investieren
+  - erst ein erfolgreiches Projekt zum wirtschaftlichen Erfolg führen
+
+
+???
 
 ---
 
@@ -298,24 +338,19 @@ Als Nutzer:
 
 - Feedback geben und Fehler bericht(ig)en
 - Andern helfen (z.B. auf Mailinglisten antworten)
-- Dokumentation schreiben & Übersetzen
+- Dokumentation schreiben &amp; Übersetzen
 - Werbung machen!
  - mehr Nutzer, mehr aktive Nutzer, mehr Entwickler, mehr Sponsoren, ...
 
 Als Auftraggeber/Sponsor:
 
- - Langfristige Projekteziele unterstützen
+ - Langfristige Projektziele unterstützen
  - Qualität fordern und finanzieren
 
 ???
 
 ---
 
-# Fazit
-
-- Projekte müssen wachsen, dennoch muß die initiierende Firma Geld in das Open Source Projekt investieren
-- bildet sich eine Community, so kann ein Open Source Projekt sehr zum wirtschaftlichen Erfolg einr Firma beitragen
-- Open Source Projekte lassen sich nicht rein aus Mitteln zur Weiterentwicklung finanzieren
 
     </textarea>
     <script src="./remark-latest.min.js">

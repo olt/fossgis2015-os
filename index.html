@@ -4,10 +4,15 @@
     <title>Title</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <style type="text/css">
-      body { font-family: 'Helvetica', 'Arial'; }
+      @import url(./fonts.css);
+
+      body { font-family: 'Droid Serif', 'Helvetica', 'Arial'; }
       h1, h2, h3 {
+        font-family: "Yanone Kaffeesatz", serif;
         font-weight: normal;
-      }
+        font-weight: 400;
+        text-align: center;
+       }
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
     </style>
   </head>
@@ -16,7 +21,9 @@
 
 class: center, middle
 
-# Der schwere Werdegang zu einem FOSSGIS-Open Source Projekt
+# Der schwere Werdegang zu einem <br>*erfolgreichem* <br>FOSSGIS-Projekt
+
+.center[Till Adams &amp; Oliver Tonnhofer]
 
 ---
 
@@ -29,15 +36,38 @@ class: center, middle
 
 ---
 
+# Till Adams
+
+.center[<img src="terrestris.png" style="width: 15%;">]
+
+* terrestris GmbH &amp; Co. KG, Bonn
+  *
+
+---
+
+
+# Oliver Tonnhofer
+
+.center[<img src="omniscale.png" style="width: 20%;">]
+
+* Omniscale GmbH &amp; Co. KG, Oldenburg
+  * Open Source Entwicklung (Client/Server)
+  * OpenStreetMap Kartendienste
+  * MapProxy und Imposm Entwicklung und Support
+
+
+---
+
 # Was ist Erfolg?
 
-- Für die Autoren
-- Für die Nutzer
+- Erfolg für die Autoren?
+- Erfolg für die Nutzer?
 
 ???
 
 olt: Wir müssen den Erfolg von zwei Seiten betrachten,: Autor und Nutzer
 Nutzer hat Interesse an Community, guter Dokumentation, Weiterentwicklung, etc.
+
 
 ---
 
@@ -45,8 +75,12 @@ Nutzer hat Interesse an Community, guter Dokumentation, Weiterentwicklung, etc.
 
 - Eigene Ziele werden erreicht!
 
+--
 
-## Motivation ein OS Projekt zu starten
+
+### Welche Ziele?
+
+.center[*Motivation ein OS Projekt zu starten*]
 
 - Philanthropisch
 - Wirtschaftlich
@@ -82,9 +116,9 @@ olt: Ein Versuch Erfolg/Vorteil/Motivation von OS zu kategorisieren.
 
 # Praktisch
 
-- ""Scratch your own itch""
+- *"Scratch your own itch"*
   - Software aus eigenen Bedürfnissen entwickeln
-- "A thousand eyes make all bugs shallow." – Linus Torvalds
+- *"A thousand eyes make all bugs shallow."* – Linus Torvalds
   - Mehr Nutzer, mehr Fehlermeldungen
   - Im Optimalfall mehr Fixes
 
@@ -101,14 +135,22 @@ olt: Ein Versuch Erfolg/Vorteil/Motivation von OS zu kategorisieren.
   - Aktive Weiterentwicklung
   - "breite" Nutzerbasis
 
-.center[Open Source ist Vertrauen.]
+--
 
-??? es geht etwas darum, was ich oft erzähle: Wann kann man auf ein open SOurce Projekt als Kernkomponente Vettrauen?
+<br>
+
+.center[**Open Source ist Vertrauen.**]
+
+???
+
+es geht etwas darum, was ich oft erzähle: Wann kann man auf ein open SOurce Projekt als Kernkomponente Vettrauen?
     wie vermeide ich mich alleine auf einen (Glasbaustein-Brille tragenden) Entwickler zu verlassen?
 
 ---
 
-# Beispiele
+class: middle
+
+# Beispiel Projekte
 
 ???
 
@@ -118,7 +160,7 @@ olt: Evtl. macht es Sinn, ein paar Beispielprojekt vorzustellen und dann Problem
 
 # Beispiele Imposm
 
-Tool mit sehr abgeschlossenem Funktionsumfang.
+Tool mit sehr abgeschlossenem Funktionsumfang.<br>
 Importiert OSM Daten nach PostGIS.
 
 Zielgruppe:
@@ -126,8 +168,8 @@ Zielgruppe:
 
 Initiale Motivation:
 
-- "Scratch your own itch"
-- "A thousand eyes make all bugs shallow."
+- *"Scratch your own itch"*
+- *"A thousand eyes make all bugs shallow."*
 - Geben und Nehmen
 - Marketing
 
@@ -143,24 +185,24 @@ Zielgruppe:
 
 Initiale Motivation:
 
-- Scratch your own itch
+- *"Scratch your own itch"*
 - Softwarekern  entwickeln, der es erlaubt zukünftige Projekte zu vereinfachen
 - Entwicklung einer steuernden Middleware für Anwendungen
 
 
 ---
+
 # Beispiele MapProxy
 
 Tool mit offenem Funktionsumfang.
 
 Zielgruppe:
-- Nutzer die auch WMS Dienste aufsetzen würden
+- Nutzer die auch WMS Dienste aufsetzen würden, keine Entwickler
 
 Initiale Motivation:
 - Geben und Nehmen
 - Weiterentwicklung
 - Support &amp; Wartung
-
 
 ---
 
@@ -169,11 +211,11 @@ Initiale Motivation:
 ## Was gehört zu einem erfolgreichen OS Projekt
 
 - Entwicklung
-- Öffentlicher Support (ML)
-- Marketing (Website)
+- Support
+- Marketing
 - Dokumentation
 - Release-Management
-- QS
+- Qualitätssicherung
 - Community
 
 
@@ -201,18 +243,33 @@ Weiterentwicklung am einfachsten von allen Punkten, insb. wenn Feature vom Aufwa
 ---
 
 
-# Beispiel MapProxy:
+# Beispiel MapProxy
 
-Intitiale Entwicklung/Weiterentwicklung: Absicherung in vier Projekte: 1. Absicherung von Diensten, 2. Absicherung von Layern, 3. Absicherung für geografische Bereiche (clipping) 4. Clipping von Kacheln
-Großes Feature: MapProxy WFS, oft angefragt, bisher keine Mittel dies umzusetzen.
+### Große Features
+
+- Absicherung/Security-API
+  - Entwicklung in Etappen
+     1. Absicherung von Diensten
+     2. Absicherung von Layern
+     3. Absicherung für geografische Bereiche *(clipping)*
+     4. Clipping von Kacheln
+
+- WFS Unterstützung
+ - Oft angefragt
+ - Hoher initialer Entwicklungsaufwand
+ - Bisher keine Mittel dies umzusetzen
+
+
 
 ---
 
 
 # Beispiel SHOGun
 
-Planung SHOGun II seit Oktober 2013. Seitdem wurde in mehreren Projekten aus Zeit/Geldmangel doch auf eine Version 1.x gesetzt.
--> Firma ist wie ein Flugzeug, das im Flug schlecht anhalten kann: Gehälter, Kundenwünsche, etc.
+- Planung SHOGun II seit Oktober 2013.
+- Seitdem wurde in mehreren Projekten aus Zeit/Geldmangel doch auf eine Version 1.x gesetzt.
+
+.center[*Firma ist wie ein Flugzeug, das im Flug schlecht anhalten kann:<br> Gehälter, Kundenwünsche, etc.*]
 
 ---
 
@@ -234,10 +291,22 @@ Wartungsgelder erlauben es, die Software "ungerichtet" weiter zu entwickeln.
 
 ---
 
+# Problem Support
+
+- Unterstützung einkaufen *"wenn es brennt"*
+ - *"Pay as you go"*
+ - Reaktionszeit?
+- Support-/Wartungsvertrag
+ - Betriebssicherheit
+ - Kontinuierliche Einnahmen erlauben es, die Software "ungerichtet" weiterzuentwickeln.
+
+---
+
 # Marketing
 
 - Website
 - Twitter
+- Vorträge
 - Flyer
 - OSGeo Live
 
@@ -268,10 +337,10 @@ Problem: Oft Mehrsprachigkeit gewünscht
 
 # Release-Management
 
-- Alpha/Beta/RC
 - Pakete aktualisieren und hochladen
 - Release notes
 - Announcement: Mailinglist, Blog, Twitter
+- Vorversionen: Alpha/Beta/RC
 
 ???
 
@@ -283,7 +352,7 @@ Regelmäßige Releases zeigen Projektaktivität
 
 - Automatisierte Tests
 - Feedback/Fehlermeldungen analysieren
-  - Konfigurations-, Dokumentations oder Benutzerfehler?
+  - Konfigurations-, Dokumentations- oder Benutzerfehler?
   - Oder Fehler im Programm?
 
 
@@ -291,28 +360,30 @@ Regelmäßige Releases zeigen Projektaktivität
 
 zahlt auch keiner
 
-problem: "Code über den Zaun werfen"
+---
 
-Ein kleines Feature kann schnell mal in 2-3 Stunden umgesetzt werden...
-  - dann Dokumentation aktualisieren
-  - dann tests schreiben
-  - dann evtl. feststellen, dass die Änderung aufwirkungen auf eine andere Funktion hat und der code noch entsprechend erweitert werden muss
-... und dann ist der Tag um.
+# Problem: "Code über den Zaun werfen"
 
-+ Fragen auf der ML zu dem Feature
-+ Bugs durch leicht andere Nutzung des Features als geplant
-+ nächste Feature Y kollidiert mit der Implementierung für Feature X.
+.center[Ein kleines Feature kann schnell mal in 2-3 Stunden umgesetzt werden.]
 
+Nur:
+- wer schreibt aktualisiert Dokumentation?
+- wer schreibt Tests?
+- wer stellt sicher, dass das Feature nicht Einfluss auf bestehende Funktion hat?
+- wer beantwortet Fragen zu dem Feature auf dem Mailingliste?
+- wer fixt zukünftige Bugs in dem Feature?
+- …
 
 ---
 
 # Community
 
 - Erfahrungsaustausch
-- Gemeinsame
-  - Weiterentwicklung
+- Gemeinsame Arbeit/Finanzierung von
+  - Weiterentwicklungen
   - Dokumentation
-- kein "Single Point of Failure"
+- Entwicklercommunity
+  - kein "Single Point of Failure"
 
 ---
 
@@ -324,7 +395,7 @@ Ein kleines Feature kann schnell mal in 2-3 Stunden umgesetzt werden...
   - Nur die Weiterentwicklung finanziert kein OS Projekt.
 - Projekte müssen wachsen um Aufgaben auf viele Schultern zu verteilen:
   - Autoren müssen langfristig Zeit/Geld in das OS Projekt investieren
-  - erst ein erfolgreiches Projekt zum wirtschaftlichen Erfolg führen
+  - erst ein erfolgreiches Projekt kann zum wirtschaftlichen Erfolg führen
 
 
 ???
@@ -338,7 +409,7 @@ Als Nutzer:
 
 - Feedback geben und Fehler bericht(ig)en
 - Andern helfen (z.B. auf Mailinglisten antworten)
-- Dokumentation schreiben &amp; Übersetzen
+- Dokumentation schreiben &amp; übersetzen
 - Werbung machen!
  - mehr Nutzer, mehr aktive Nutzer, mehr Entwickler, mehr Sponsoren, ...
 
@@ -350,6 +421,12 @@ Als Auftraggeber/Sponsor:
 ???
 
 ---
+
+class: middle
+
+# Vielen Dank!
+
+.center[Fragen, Anmerkungen Diskussion?!]
 
 
     </textarea>
